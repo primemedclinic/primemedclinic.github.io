@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PrimeMed | طبيب روماتيزم في طمرة</title>
+<meta name="description" content="عيادة PrimeMed في طمرة مول: طب الروماتيزم والطب الباطني وجراحة العظام. معلومات عن أمراض المفاصل الالتهابية والتشخيص والعلاج وحجز موعد.">
+<link rel="canonical" href="https://primemedclinic.github.io/ar/"><link rel="alternate" hreflang="he" href="https://primemedclinic.github.io/"><link rel="alternate" hreflang="ar" href="https://primemedclinic.github.io/ar/"><link rel="alternate" hreflang="x-default" href="https://primemedclinic.github.io/">
+<meta property="og:type" content="website"><meta property="og:title" content="PrimeMed | طبيب روماتيزم في طمرة"><meta property="og:description" content="عيادة PrimeMed في طمرة مول: طب الروماتيزم والطب الباطني وجراحة العظام. معلومات عن أمراض المفاصل الالتهابية والتشخيص والعلاج وحجز موعد."><meta property="og:locale" content="ar_IL">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "PrimeMed", "telephone": "+972-4-640-2020", "description": "عيادة PrimeMed في طمرة مول: طب الروماتيزم والطب الباطني وجراحة العظام. معلومات عن أمراض المفاصل الالتهابية والتشخيص والعلاج وحجز موعد.", "url": "https://primemedclinic.github.io/ar/", "address": {"@type": "PostalAddress", "streetAddress": "طمرة مول، الطابق الأول، الشارع الرئيسي", "addressLocality": "طمرة", "addressCountry": "IL"}, "medicalSpecialty": ["Rheumatologic", "Musculoskeletal"], "availableLanguage": ["he", "ar"], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "16:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "19:00"}]}</script>
+<style>/* Layout: one calm reading column (≈68ch) for patient content, framed by a wide header band; RTL throughout. */
+:root {
+  --bg: #f6f8f7;
+  --surface: #ffffff;
+  --ink: #12302f;
+  --muted: #4d6362;
+  --line: #d5dfdd;
+  --brand: #0e5a57;
+  --brand-ink: #ffffff;
+  --accent: #b5651d;
+  --soft: #e6efed;
+  --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif;
+  --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
+    --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
+  --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.7;
+}
+a { color: var(--brand); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px;
+}
+h1, h2, h3 { font-family: var(--display); line-height: 1.25; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem); }
+h3 { font-size: 1.25rem; }
+p { margin: 0; }
+
+.wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 16px; }
+.col { max-width: 46rem; }
+
+/* Header */
+.site-head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; flex-wrap: wrap; }
+.logo { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
+.logo b { font-family: var(--display); font-size: 1.5rem; letter-spacing: .01em; }
+.logo b span { color: var(--brand); }
+.logo small { color: var(--muted); font-size: .85rem; }
+.nav { display: flex; gap: .25rem 1rem; flex-wrap: wrap; font-size: .95rem; }
+.nav a { color: var(--ink); text-decoration: none; padding-block: .2rem; }
+.nav a:hover { color: var(--brand); text-decoration: underline; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  background: var(--brand); color: var(--brand-ink); border: 0; border-radius: 999px;
+  padding: .65rem 1.3rem; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--brand); box-shadow: inset 0 0 0 2px var(--brand); }
+
+/* Hero */
+.hero { padding-block: 3rem 2.5rem; border-bottom: 1px solid var(--line); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+.eyebrow { color: var(--accent); font-weight: 700; font-size: .9rem; letter-spacing: .04em; }
+.hero h1 { font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.9rem); margin-block: .4rem 1rem; }
+.hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 38rem; }
+.hero .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.hours { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.4rem; }
+.hours h2 { font-size: 1.2rem; margin-bottom: .6rem; }
+.hours table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hours td { padding-block: .45rem; border-bottom: 1px dashed var(--line); }
+.hours td:last-child { text-align: left; direction: ltr; }
+.hours .closed td { color: var(--muted); }
+.hours .addr { margin-top: .9rem; font-size: .95rem; color: var(--muted); }
+
+/* Sections */
+section.block { padding-block: 3.5rem; }
+section.block + section.block { border-top: 1px solid var(--line); }
+section.alt { background: var(--soft); }
+.sec-head { display: grid; gap: .6rem; margin-bottom: 1.8rem; max-width: 46rem; }
+.sec-head p { color: var(--muted); }
+
+/* Doctors */
+.docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.25rem; }
+.doc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: .5rem; align-content: start; }
+.doc .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
+.doc ul { margin: .3rem 0 0; padding-inline-start: 1.1rem; color: var(--muted); }
+
+/* Inflammatory vs mechanical table */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.tbl table { width: 100%; border-collapse: collapse; min-width: 34rem; }
+.tbl th, .tbl td { text-align: right; padding: .75rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl thead th { background: var(--soft); font-size: .95rem; }
+.tbl tbody th { font-weight: 600; color: var(--muted); width: 26%; }
+.tbl tr:last-child th, .tbl tr:last-child td { border-bottom: 0; }
+.note { margin-top: 1rem; color: var(--muted); font-size: .95rem; }
+
+/* Condition accordions */
+.conds { display: grid; gap: .6rem; max-width: 52rem; }
+details.cond { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+details.cond summary { cursor: pointer; list-style: none; padding: 1rem 1.2rem; display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+details.cond summary::-webkit-details-marker { display: none; }
+details.cond summary h3 { font-size: 1.15rem; }
+details.cond summary .en { color: var(--muted); font-size: .85rem; direction: ltr; white-space: nowrap; }
+details.cond summary::after { content: "+"; color: var(--brand); font-weight: 700; font-size: 1.3rem; line-height: 1; }
+details.cond[open] summary::after { content: "–"; }
+details.cond .body { padding: 0 1.2rem 1.2rem; display: grid; gap: .6rem; }
+details.cond dl { margin: 0; display: grid; gap: .5rem; }
+details.cond dt { font-weight: 700; }
+details.cond dd { margin: 0; color: var(--muted); }
+.group-title { font-size: 1rem; color: var(--accent); font-family: var(--body); font-weight: 700; margin-block: 1.4rem .2rem; letter-spacing: .03em; }
+
+/* Two-column info lists */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 2rem; }
+.cols > div { min-width: 0; display: grid; gap: .6rem; align-content: start; }
+.cols ul { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .45rem; }
+.cols li b { color: var(--ink); }
+.cols li { color: var(--muted); }
+
+/* Red flags */
+.flags { background: var(--surface); border: 1px solid var(--line); border-inline-start: 4px solid var(--accent); border-radius: var(--radius); padding: 1.2rem 1.4rem; max-width: 46rem; }
+.flags ul { margin: .5rem 0 0; padding-inline-start: 1.2rem; display: grid; gap: .35rem; }
+
+/* Booking */
+.book { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: 1rem; }
+form.req { display: grid; gap: .9rem; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+label { display: grid; gap: .3rem; font-weight: 600; font-size: .95rem; }
+input, select, textarea {
+  font: inherit; font-weight: 400; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: .55rem .7rem; width: 100%;
+}
+textarea { min-height: 5.5rem; resize: vertical; }
+.fine { color: var(--muted); font-size: .88rem; }
+.result { background: var(--soft); border-radius: 8px; padding: 1rem; display: grid; gap: .6rem; }
+.result pre { margin: 0; white-space: pre-wrap; font-family: var(--body); font-size: .95rem; }
+.contact-list { display: grid; gap: .8rem; }
+.contact-list div { display: grid; }
+.contact-list span { color: var(--muted); font-size: .9rem; }
+.contact-list b { font-size: 1.1rem; }
+.ltr { direction: ltr; unicode-bidi: isolate; }
+
+/* FAQ */
+.faq { display: grid; gap: 1.2rem; max-width: 46rem; }
+.faq h3 { font-size: 1.1rem; margin-bottom: .25rem; }
+.faq p { color: var(--muted); }
+
+/* Footer */
+footer { background: var(--surface); border-top: 1px solid var(--line); padding-block: 2rem; font-size: .92rem; color: var(--muted); }
+footer .wrap { display: grid; gap: .8rem; }
+.disclaimer { max-width: 52rem; }
+
+@media (max-width: 760px) {
+  .hero .wrap, .book { grid-template-columns: 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+  .nav { display: none; }
+  .hero { padding-block: 2rem; }
+  section.block { padding-block: 2.5rem; }
+}
+
+/* Language switch and Arabic typography */
+.head-actions { display: flex; align-items: center; gap: .9rem; }
+.lang { color: var(--ink); font-weight: 700; text-decoration: none; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; }
+.lang:hover { border-color: var(--brand); color: var(--brand); }
+:lang(ar) { --display: "Noto Naskh Arabic", "Geeza Pro", "Arial", serif; --body: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Arial, sans-serif; }
+:lang(ar) .eyebrow, :lang(ar) .group-title { letter-spacing: 0; }
+:lang(he) { --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif; --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif; }
+
+/* Booking choice: Mushlam vs private */
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+.choice { align-content: start; }
+.choice .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
+.choice .btn { justify-self: start; }
+.hero h1 + .sub { font-family: var(--display); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); color: var(--brand); margin-block: -.4rem 1rem; text-wrap: balance; }
+.doc .pos { font-weight: 600; color: var(--brand); margin-top: -.3rem; }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>Prime<span>Med</span></b><small>عيادة أطباء استشاريين · طمرة</small></a>
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <a href="#doctors">الأطباء</a>
+      <a href="#conditions">الأمراض الالتهابية</a>
+      <a href="#diagnosis">التشخيص والعلاج</a>
+      <a href="#faq">أسئلة شائعة</a>
+      <a href="#contact">الوصول</a>
+    </nav>
+    <div class="head-actions"><a class="lang" href="../" hreflang="he" lang="he" data-lang="he">עברית</a><a class="btn" href="#book">حجز موعد</a></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">طب الروماتيزم · الطب الباطني · جراحة العظام</p>
+      <h1>عيادة أطباء أخصائيين استشاريين مستقلين</h1>
+      <p class="sub">خدمات في مجالات مختلفة، منها الروماتيزم وجراحة العظام، وقريبًا خدمات إضافية</p>
+      <p class="lead">تقع PrimeMed في طمرة مول. نشخّص ونعالج آلام المفاصل وأمراض المفاصل الالتهابية وأمراض المناعة الذاتية، ونقدّم استشارة متخصصة في جراحة العظام.</p>
+      <div class="cta">
+        <a class="btn" href="#book">حجز موعد</a>
+        <a class="btn ghost" href="#conditions">معلومات عن الأمراض</a>
+      </div>
+    </div>
+    <aside class="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">ساعات الاستقبال</h2>
+      <table>
+        <tbody>
+          <tr><td>يوم الثلاثاء</td><td>16:00–21:00</td></tr>
+          <tr><td>يوم الأربعاء</td><td>14:00–19:00</td></tr>
+          <tr class="closed"><td>باقي الأيام</td><td>مغلق</td></tr>
+        </tbody>
+      </table>
+      <p class="addr">طمرة مول، الطابق الأول، الشارع الرئيسي، طمرة</p>
+    </aside>
+  </div>
+</section>
+
+<section class="block" id="doctors">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>أطباء العيادة</h2>
+      <p>يعمل في العيادة أطباء أخصائيون مستقلون. يفحص الطبيب الأخصائي كل مريض بشكل شخصي.</p>
+    </div>
+    <div class="docs">
+      <article class="doc">
+        <p class="role">أخصائي في الطب الباطني وطب الروماتيزم</p>
+        <h3>د. نزار حجازي</h3>
+        <p class="pos">مدير قسم الباطني ب، المركز الطبي هعيمك</p>
+        <p>تشخيص وعلاج أمراض المفاصل الالتهابية وأمراض النسيج الضام والتهابات الأوعية الدموية، وفحص آلام المفاصل ونتائج الفحوصات غير الطبيعية.</p>
+        <ul>
+          <li>التهاب المفاصل الروماتويدي والصدفي والتهاب الفقار</li>
+          <li>النقرس وأمراض البلورات</li>
+          <li>الذئبة الحمراء ومتلازمة شوغرن والتهابات الأوعية الدموية</li>
+          <li>متابعة وعلاج بالأدوية البيولوجية</li>
+        </ul>
+      </article>
+      <article class="doc">
+        <p class="role">أخصائي جراحة العظام</p>
+        <h3>د. فادي خازن</h3>
+        <p class="pos">نائب مدير قسم العظام، المركز الطبي الكرمل</p>
+        <p>تشخيص وعلاج مشاكل العظام والمفاصل، منها إصابات الركبة وخشونتها، من العلاج المحافظ وحتى التحويل إلى عملية جراحية عند الحاجة.</p>
+        <ul>
+          <li>تمزقات الغضروف الهلالي والأربطة (ACL)</li>
+          <li>خشونة الركبة (الفصال العظمي)</li>
+          <li>الإصابات الرياضية وآلام الركبة المزمنة</li>
+          <li>الحقن في مفصل الركبة</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="when">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>ألم التهابي أم ألم ميكانيكي؟</h2>
+      <p>ليس كل ألم في المفاصل التهابيًا. التمييز بين النوعين يساعد على معرفة متى يجب التوجه إلى طبيب الروماتيزم.</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">ألم التهابي</th><th scope="col">ألم ميكانيكي (خشونة، إجهاد)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">التيبّس الصباحي</th><td>طويل، غالبًا أكثر من 30 دقيقة</td><td>قصير، غالبًا أقل من 30 دقيقة</td></tr>
+          <tr><th scope="row">تأثير الحركة</th><td>يتحسن مع الحركة والنشاط</td><td>يزداد مع النشاط ويتحسن مع الراحة</td></tr>
+          <tr><th scope="row">التورّم</th><td>تورّم طري وسخونة في المفصل</td><td>غالبًا بدون تورّم ملحوظ</td></tr>
+          <tr><th scope="row">عمر الظهور</th><td>في أي عمر، حتى في سن مبكرة</td><td>أكثر شيوعًا مع التقدم في العمر</td></tr>
+          <tr><th scope="row">أعراض إضافية</th><td>تعب، حرارة خفيفة، طفح جلدي، التهاب في العين</td><td>عادة بدون أعراض عامة</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">هذا الجدول قاعدة عامة فقط. الفحص الطبي وحده يحدد نوع الألم وسببه.</p>
+  </div>
+</section>
+
+<section class="block" id="conditions">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>الأمراض التي نشخّصها ونعالجها</h2>
+      <p>معلومات عامة عن الأمراض الشائعة في العيادة. اضغطوا على اسم المرض للقراءة عنه.</p>
+    </div>
+    <div class="conds">
+      <h3 class="group-title">أمراض المفاصل الالتهابية</h3>
+
+      <details class="cond">
+        <summary><h3>التهاب المفاصل الروماتويدي</h3><span class="en">Rheumatoid arthritis</span></summary>
+        <div class="body">
+          <p>مرض مناعي ذاتي مزمن يهاجم فيه جهاز المناعة الغشاء المبطّن للمفصل. يصيب غالبًا المفاصل الصغيرة في اليدين والقدمين، في جهتي الجسم.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>ألم وتورّم في مفاصل الأصابع والرسغ والقدمين، تيبّس صباحي طويل وتعب.</dd>
+            <dt>التشخيص</dt><dd>فحص سريري، فحوصات دم (RF وAnti-CCP وسرعة الترسب وCRP) وتصوير المفاصل.</dd>
+            <dt>العلاج</dt><dd>العلاج المبكر يمنع ضررًا دائمًا في المفاصل. تُستعمل أدوية معدِّلة لسير المرض مثل الميثوتريكسات، وعند الحاجة أدوية بيولوجية أو مثبطات JAK.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>التهاب المفاصل الصدفي</h3><span class="en">Psoriatic arthritis</span></summary>
+        <div class="body">
+          <p>التهاب مفاصل يظهر لدى بعض المصابين بالصدفية، وأحيانًا قبل ظهور المرض الجلدي.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>تورّم في المفاصل أو في إصبع كامل (إصبع يشبه النقانق)، ألم في الأوتار وأماكن اتصالها بالعظم، ألم في الظهر وتغيّرات في الأظافر.</dd>
+            <dt>التشخيص</dt><dd>تشخيص سريري يعتمد على الفحص وتاريخ الإصابة بالصدفية وفحوصات الدم والتصوير.</dd>
+            <dt>العلاج</dt><dd>مضادات الالتهاب، أدوية معدِّلة لسير المرض وأدوية بيولوجية، وبعضها يعالج المرض الجلدي أيضًا.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>التهاب الفقار المحوري والتهاب الفقار اللاصق</h3><span class="en">Axial spondyloarthritis</span></summary>
+        <div class="body">
+          <p>مرض التهابي يصيب بشكل أساسي العمود الفقري ومفاصل الحوض (المفاصل العجزية الحرقفية). يبدأ غالبًا قبل سن 45.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>ألم مزمن أسفل الظهر يزداد مع الراحة وفي الليل ويتحسن مع الحركة، تيبّس صباحي، وأحيانًا التهاب في العين (التهاب العنبية).</dd>
+            <dt>التشخيص</dt><dd>فحص سريري، فحص HLA-B27، مؤشرات الالتهاب وصورة أشعة أو MRI لمفاصل الحوض.</dd>
+            <dt>العلاج</dt><dd>نشاط بدني وعلاج طبيعي، مضادات الالتهاب (NSAIDs)، وعند الحاجة أدوية بيولوجية.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>النقرس</h3><span class="en">Gout</span></summary>
+        <div class="body">
+          <p>التهاب مفاصل ينتج عن ترسّب بلورات حمض اليوريك في المفصل. النوبة النموذجية تصيب إصبع القدم الكبير، لكنها قد تظهر في أي مفصل.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>نوبة مفاجئة من ألم شديد جدًا واحمرار وسخونة وتورّم في المفصل، غالبًا في الليل.</dd>
+            <dt>التشخيص</dt><dd>الكشف عن البلورات في سائل يُسحب من المفصل، مستوى حمض اليوريك في الدم والفحص بالموجات فوق الصوتية.</dd>
+            <dt>العلاج</dt><dd>علاج النوبة (مضادات الالتهاب أو الكولشيسين أو الستيرويدات) وعلاج وقائي لخفض حمض اليوريك مثل الألوبيورينول، مع تغييرات في التغذية.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>ألم العضلات الروماتيزمي</h3><span class="en">Polymyalgia rheumatica</span></summary>
+        <div class="body">
+          <p>مرض التهابي يصيب من هم فوق سن 50، ويسبب آلامًا وتيبّسًا في الكتفين والحوض.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>ألم وتيبّس في الكتفين والرقبة والوركين، صعوبة في النهوض من السرير صباحًا وتعب.</dd>
+            <dt>التشخيص</dt><dd>صورة سريرية نموذجية ومؤشرات التهاب مرتفعة، بعد استبعاد أمراض أخرى.</dd>
+            <dt>العلاج</dt><dd>ستيرويدات بجرعة منخفضة مع تخفيض تدريجي ومتابعة. من المهم الانتباه لأعراض التهاب الشريان الصدغي (انظر أدناه).</dd>
+          </dl>
+        </div>
+      </details>
+
+      <h3 class="group-title">أمراض النسيج الضام والتهابات الأوعية الدموية</h3>
+
+      <details class="cond">
+        <summary><h3>الذئبة الحمراء (لوبوس)</h3><span class="en">Systemic lupus erythematosus</span></summary>
+        <div class="body">
+          <p>مرض مناعي ذاتي قد يصيب أعضاء كثيرة: الجلد والمفاصل والكلى والدم والجهاز العصبي. وهو أكثر شيوعًا لدى النساء الشابات.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>آلام المفاصل، طفح على الوجه أو حساسية للشمس، تقرحات في الفم، تساقط الشعر، تعب وحرارة.</dd>
+            <dt>التشخيص</dt><dd>فحوصات دم للأجسام المضادة (ANA وAnti-dsDNA)، تعداد دم، فحص بول ووظائف الكلى.</dd>
+            <dt>العلاج</dt><dd>الهيدروكسي كلوروكين (بلاكوينيل) كأساس، وبحسب الأعضاء المصابة ستيرويدات أو أدوية مثبطة للمناعة أو أدوية بيولوجية.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>متلازمة شوغرن</h3><span class="en">Sjögren’s disease</span></summary>
+        <div class="body">
+          <p>مرض مناعي ذاتي يصيب بشكل أساسي الغدد الدمعية واللعابية.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>جفاف في العينين والفم، آلام المفاصل، تعب، وأحيانًا تورّم في الغدد اللعابية.</dd>
+            <dt>التشخيص</dt><dd>فحوصات دم (Anti-Ro/SSA)، فحوصات لإفراز الدموع واللعاب، وأحيانًا خزعة من الشفة.</dd>
+            <dt>العلاج</dt><dd>قطرات للعين وبدائل اللعاب، علاج آلام المفاصل ومتابعة إصابة أعضاء أخرى.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>التهابات الأوعية الدموية</h3><span class="en">Vasculitis</span></summary>
+        <div class="body">
+          <p>مجموعة أمراض يحدث فيها التهاب في جدران الأوعية الدموية. من الأمثلة الشائعة فوق سن 50 التهاب الشريان الصدغي (Giant cell arteritis).</p>
+          <dl>
+            <dt>الأعراض</dt><dd>صداع جديد، ألم في الفك أثناء المضغ، اضطرابات في الرؤية، حرارة، فقدان الوزن وطفح جلدي.</dd>
+            <dt>التشخيص</dt><dd>فحوصات دم وبول، أجسام مضادة خاصة (ANCA)، تصوير وأحيانًا خزعة.</dd>
+            <dt>العلاج</dt><dd>ستيرويدات وأدوية مثبطة للمناعة. اضطراب مفاجئ في الرؤية مع صداع يستوجب التوجه الفوري إلى غرفة الطوارئ.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <h3 class="group-title">المفاصل والعضلات</h3>
+
+      <details class="cond">
+        <summary><h3>الفصال العظمي (خشونة المفاصل)</h3><span class="en">Osteoarthritis</span></summary>
+        <div class="body">
+          <p>أكثر أمراض المفاصل شيوعًا. يصيب تآكل الغضروف بشكل أساسي الركبتين والوركين ومفاصل الأصابع. ليس مرضًا التهابيًا بالمعنى التقليدي، لكن من المهم التمييز بينه وبين الأمراض الالتهابية.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>ألم يزداد مع النشاط، تيبّس قصير بعد الراحة ونقص في مدى الحركة.</dd>
+            <dt>التشخيص</dt><dd>فحص سريري وصورة أشعة.</dd>
+            <dt>العلاج</dt><dd>إنقاص الوزن، علاج طبيعي وتقوية العضلات، مسكنات الألم، الحقن في المفصل، وفي المراحل المتقدمة تقييم من طبيب العظام لإجراء عملية.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>الألم العضلي الليفي (فيبروميالجيا)</h3><span class="en">Fibromyalgia</span></summary>
+        <div class="body">
+          <p>متلازمة ألم منتشر مزمن بدون التهاب أو ضرر في المفاصل، ترتبط بحساسية زائدة للجهاز العصبي تجاه الألم.</p>
+          <dl>
+            <dt>الأعراض</dt><dd>آلام منتشرة في الجسم، تعب، نوم غير مريح وصعوبة في التركيز.</dd>
+            <dt>التشخيص</dt><dd>تشخيص سريري بعد استبعاد الأمراض الالتهابية وغيرها.</dd>
+            <dt>العلاج</dt><dd>نشاط بدني ملائم ومتدرّج، تحسين النوم، إرشاد، وأحيانًا علاج دوائي.</dd>
+          </dl>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="diagnosis">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>التشخيص والعلاج</h2>
+      <p>يبدأ الفحص بمحادثة مفصّلة وفحص سريري. وعند الحاجة نُكمل بفحوصات ونلائم علاجًا شخصيًا.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h3>فحوصات شائعة</h3>
+        <ul>
+          <li><b>مؤشرات الالتهاب:</b> سرعة الترسب (ESR) وCRP</li>
+          <li><b>الأجسام المضادة:</b> RF وAnti-CCP وANA وغيرها بحسب الاشتباه</li>
+          <li><b>فحص جيني:</b> HLA-B27 عند الاشتباه بمرض التهابي في العمود الفقري</li>
+          <li><b>حمض اليوريك</b> عند الاشتباه بالنقرس</li>
+          <li><b>التصوير:</b> أشعة سينية، موجات فوق صوتية للمفاصل وMRI</li>
+          <li><b>سحب سائل من المفصل</b> لفحص البلورات والعدوى</li>
+        </ul>
+      </div>
+      <div>
+        <h3>خيارات العلاج</h3>
+        <ul>
+          <li><b>مضادات الالتهاب</b> (NSAIDs) لتخفيف الألم والتيبّس</li>
+          <li><b>الستيرويدات</b> لفترة قصيرة أو بالحقن في المفصل</li>
+          <li><b>أدوية معدِّلة لسير المرض:</b> ميثوتريكسات، سلفاسالازين، هيدروكسي كلوروكين، ليفلونومايد</li>
+          <li><b>أدوية بيولوجية:</b> مثل مثبطات TNF وIL-17 وIL-6</li>
+          <li><b>مثبطات JAK</b> على شكل أقراص</li>
+          <li><b>النشاط البدني والعلاج الطبيعي والتغذية</b> كجزء من كل علاج</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flags" style="margin-top:2rem">
+      <h3>متى يجب التوجه إلى طبيب الروماتيزم؟</h3>
+      <ul>
+        <li>تورّم في مفصل أو أكثر يستمر أكثر من بضعة أسابيع</li>
+        <li>تيبّس صباحي يستمر أكثر من نصف ساعة</li>
+        <li>ألم مزمن في الظهر يبدأ قبل سن 45 ويتحسن مع الحركة</li>
+        <li>نتائج فحوصات غير طبيعية مثل ANA أو RF إيجابي، أو مؤشرات التهاب مرتفعة</li>
+        <li>نوبات متكررة لمفصل متورّم وأحمر ومؤلم</li>
+      </ul>
+      <p class="note">مفصل ساخن ومتورّم مع حرارة مرتفعة، أو اضطراب مفاجئ في الرؤية، يستوجبان التوجه الفوري إلى غرفة الطوارئ وليس إلى موعد في العيادة.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="book">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>حجز موعد</h2>
+      <p>اختاروا نوع الموعد المناسب لكم.</p>
+    </div>
+<div class="choices">
+      <div class="panel choice">
+        <p class="role">لمؤمَّني كلاليت موشلام</p>
+        <h3>موعد ضمن الموشلام</h3>
+        <p>اختاروا موعدًا متاحًا في جدول المواعيد الإلكتروني، ويُحجز الموعد فورًا.</p>
+        <a class="btn" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener">اختيار موعد في الجدول</a>
+      </div>
+      <div class="panel choice">
+        <p class="role">لمؤمَّني جميع صناديق المرضى</p>
+        <h3>موعد خاص</h3>
+        <p>اتركوا تفاصيلكم، وستتواصل معكم السكرتارية لتنسيق الموعد.</p>
+        <a class="btn ghost" href="#req">طلب موعد خاص</a>
+      </div>
+    </div>
+    <div class="book">
+      <div class="panel">
+        <h3>طلب موعد خاص</h3>
+        <form class="req" id="req" novalidate>
+          <div class="row2">
+            <label for="f-name">الاسم الكامل<input id="f-name" name="name" required autocomplete="name"></label>
+            <label for="f-phone">رقم الهاتف<input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" dir="ltr"></label>
+          </div>
+          <label for="f-doc">الطبيب
+              <select id="f-doc" name="doctor">
+                <option>الروماتيزم والطب الباطني</option>
+                <option>جراحة العظام</option>
+                <option>لست متأكدًا</option>
+              </select>
+            </label>
+          <label for="f-reason">سبب التوجه (اختياري)<textarea id="f-reason" name="reason" placeholder="مثلًا: آلام وتورّم في اليدين منذ شهرين"></textarea></label>
+          <p class="fine" id="f-err" hidden>الرجاء تعبئة الاسم ورقم الهاتف.</p>
+          <button class="btn" type="submit">تجهيز الطلب للإرسال عبر واتساب</button>
+          <p class="fine">يُرسَل الطلب من هاتفكم عبر واتساب إلى السكرتارية. ستتواصل معكم السكرتارية لتحديد الموعد. لا ترسلوا معلومات طبية حساسة أو طارئة.</p>
+        </form>
+        <div class="result" id="req-out" hidden>
+          <p><b>الطلب جاهز.</b> اضغطوا على الزر لفتح واتساب وإرساله. إذا لم يُفتح واتساب، انسخوا النص وأرسلوه إلى رقم العيادة.</p>
+          <pre id="req-text"></pre>
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap">
+            <a class="btn" id="req-wa" href="#" target="_blank" rel="noopener">فتح في واتساب</a>
+            <button class="btn ghost" type="button" id="req-copy">نسخ النص</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="contact">
+        <h3>التواصل والوصول</h3>
+        <div class="contact-list">
+          <div><span>موعد ضمن الموشلام</span><a class="btn ghost" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener" id="online-booking">إلى جدول المواعيد</a></div>
+          <div><span>هاتف السكرتارية</span><a class="ltr" href="tel:+97246402020"><b>04-640-2020</b></a></div>
+          <div><span>واتساب</span><a class="ltr" href="https://wa.me/972503593893" target="_blank" rel="noopener"><b>050-359-3893</b></a></div>
+          <div><span>العنوان</span><b>طمرة مول، الطابق الأول، الشارع الرئيسي، طمرة</b></div>
+          <div><span>الوصول</span><a href="https://www.google.com/maps/search/?api=1&amp;query=%D7%98%D7%9E%D7%A8%D7%94+%D7%9E%D7%95%D7%9C" target="_blank" rel="noopener">فتح في خرائط جوجل</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>أسئلة شائعة</h2></div>
+    <div class="faq">
+      <div><h3>ماذا أحضر إلى الزيارة الأولى؟</h3><p>بطاقة الهوية، قائمة الأدوية التي تتناولونها، نتائج فحوصات دم سابقة، صور الأشعة وتقاريرها، ورسائل الخروج من المستشفى أو ملخصات زيارات ذات صلة.</p></div>
+      <div><h3>هل أحتاج إلى تحويل من طبيب العائلة؟</h3><p>يمكن حجز موعد مباشرة. إذا كان لديكم تحويل أو رسالة من طبيب العائلة، أحضروها إلى الزيارة.</p></div>
+      <div><h3>كم تستغرق الزيارة الأولى؟</h3><p>تشمل الزيارة الأولى محادثة مفصّلة وفحصًا سريريًا، لذلك تكون أطول من زيارة المتابعة.</p></div>
+      <div><h3>هل يمكن الحصول على استرداد من التأمين؟</h3><p>الاسترداد يتعلق بالتأمين المكمّل أو الخاص لديكم. ننصح بالاستفسار لدى شركة التأمين قبل الزيارة.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>PrimeMed</b> · عيادة أطباء استشاريين · طمرة مول، الطابق الأول، طمرة</p>
+    <p class="disclaimer">المعلومات في هذا الموقع عامة فقط ولا تُعدّ بديلًا عن الاستشارة أو التشخيص أو العلاج الطبي. لا تبدأوا أو توقفوا أو تغيّروا علاجًا دوائيًا دون استشارة الطبيب. في حالة الطوارئ توجهوا إلى نجمة داوود الحمراء (101) أو إلى أقرب غرفة طوارئ.</p>
+  </div>
+</footer>
+
+<script>// Appointment request form: builds a WhatsApp message for the clinic secretary.
+function initBooking(root) {
+  // Clinic WhatsApp number in international format, digits only 
+  var CLINIC_WA = "972503593893";
+  var T = {
+    he: { hi: "שלום, אבקש לקבוע תור פרטי במרפאת PrimeMed. אשמח שתחזרו אליי.", name: "שם", phone: "טלפון", doc: "תחום", day: "יום מועדף", reason: "סיבת הפנייה", copied: "הועתק", select: "סמנו והעתיקו" },
+    ar: { hi: "مرحبًا، أود حجز موعد خاص في عيادة PrimeMed. أرجو التواصل معي.", name: "الاسم", phone: "الهاتف", doc: "المجال", day: "اليوم المفضّل", reason: "سبب التوجه", copied: "تم النسخ", select: "حدّدوا النص وانسخوه" }
+  };
+  var form = root.querySelector("#req");
+  if (!form) return;
+  var langEl = form.closest("[lang]");
+  var t = T[langEl && langEl.getAttribute("lang") === "ar" ? "ar" : "he"];
+  var out = root.querySelector("#req-out");
+  var err = root.querySelector("#f-err");
+  var textEl = root.querySelector("#req-text");
+  function v(id) { return root.querySelector("#" + id).value.trim(); }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = v("f-name"), phone = v("f-phone");
+    if (!name || !phone) { err.hidden = false; return; }
+    err.hidden = true;
+    var lines = [t.hi, t.name + ": " + name, t.phone + ": " + phone, t.doc + ": " + v("f-doc")];
+    var reason = v("f-reason");
+    if (reason) lines.push(t.reason + ": " + reason);
+    var msg = lines.join("\n");
+    textEl.textContent = msg;
+    root.querySelector("#req-wa").href = "https://wa.me/" + CLINIC_WA + "?text=" + encodeURIComponent(msg);
+    out.hidden = false;
+    out.scrollIntoView({ block: "nearest" });
+  });
+  root.querySelector("#req-copy").addEventListener("click", function () {
+    var btn = this;
+    function select() {
+      var r = document.createRange(); r.selectNodeContents(textEl);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = t.select;
+    }
+    try { navigator.clipboard.writeText(textEl.textContent).then(function () { btn.textContent = t.copied; }, select); }
+    catch (x) { select(); }
+  });
+}
+initBooking(document);</script>
+</body>
+</html>

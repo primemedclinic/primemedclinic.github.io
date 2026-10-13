@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PrimeMed | ראומטולוג בטמרה</title>
+<meta name="description" content="מרפאת PrimeMed בטמרה מול: ראומטולוגיה, רפואה פנימית ואורתופדיה. מידע על מחלות מפרקים דלקתיות, אבחון וטיפול, וקביעת תור.">
+<link rel="canonical" href="https://primemedclinic.github.io/"><link rel="alternate" hreflang="he" href="https://primemedclinic.github.io/"><link rel="alternate" hreflang="ar" href="https://primemedclinic.github.io/ar/"><link rel="alternate" hreflang="x-default" href="https://primemedclinic.github.io/">
+<meta property="og:type" content="website"><meta property="og:title" content="PrimeMed | ראומטולוג בטמרה"><meta property="og:description" content="מרפאת PrimeMed בטמרה מול: ראומטולוגיה, רפואה פנימית ואורתופדיה. מידע על מחלות מפרקים דלקתיות, אבחון וטיפול, וקביעת תור."><meta property="og:locale" content="he_IL">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "PrimeMed", "telephone": "+972-4-640-2020", "description": "מרפאת PrimeMed בטמרה מול: ראומטולוגיה, רפואה פנימית ואורתופדיה. מידע על מחלות מפרקים דלקתיות, אבחון וטיפול, וקביעת תור.", "url": "https://primemedclinic.github.io/", "address": {"@type": "PostalAddress", "streetAddress": "טמרה מול, קומה ראשונה, הכביש הראשי", "addressLocality": "טמרה", "addressCountry": "IL"}, "medicalSpecialty": ["Rheumatologic", "Musculoskeletal"], "availableLanguage": ["he", "ar"], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "16:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "19:00"}]}</script>
+<style>/* Layout: one calm reading column (≈68ch) for patient content, framed by a wide header band; RTL throughout. */
+:root {
+  --bg: #f6f8f7;
+  --surface: #ffffff;
+  --ink: #12302f;
+  --muted: #4d6362;
+  --line: #d5dfdd;
+  --brand: #0e5a57;
+  --brand-ink: #ffffff;
+  --accent: #b5651d;
+  --soft: #e6efed;
+  --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif;
+  --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
+    --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
+  --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.7;
+}
+a { color: var(--brand); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px;
+}
+h1, h2, h3 { font-family: var(--display); line-height: 1.25; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem); }
+h3 { font-size: 1.25rem; }
+p { margin: 0; }
+
+.wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 16px; }
+.col { max-width: 46rem; }
+
+/* Header */
+.site-head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; flex-wrap: wrap; }
+.logo { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
+.logo b { font-family: var(--display); font-size: 1.5rem; letter-spacing: .01em; }
+.logo b span { color: var(--brand); }
+.logo small { color: var(--muted); font-size: .85rem; }
+.nav { display: flex; gap: .25rem 1rem; flex-wrap: wrap; font-size: .95rem; }
+.nav a { color: var(--ink); text-decoration: none; padding-block: .2rem; }
+.nav a:hover { color: var(--brand); text-decoration: underline; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  background: var(--brand); color: var(--brand-ink); border: 0; border-radius: 999px;
+  padding: .65rem 1.3rem; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--brand); box-shadow: inset 0 0 0 2px var(--brand); }
+
+/* Hero */
+.hero { padding-block: 3rem 2.5rem; border-bottom: 1px solid var(--line); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+.eyebrow { color: var(--accent); font-weight: 700; font-size: .9rem; letter-spacing: .04em; }
+.hero h1 { font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.9rem); margin-block: .4rem 1rem; }
+.hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 38rem; }
+.hero .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.hours { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.4rem; }
+.hours h2 { font-size: 1.2rem; margin-bottom: .6rem; }
+.hours table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hours td { padding-block: .45rem; border-bottom: 1px dashed var(--line); }
+.hours td:last-child { text-align: left; direction: ltr; }
+.hours .closed td { color: var(--muted); }
+.hours .addr { margin-top: .9rem; font-size: .95rem; color: var(--muted); }
+
+/* Sections */
+section.block { padding-block: 3.5rem; }
+section.block + section.block { border-top: 1px solid var(--line); }
+section.alt { background: var(--soft); }
+.sec-head { display: grid; gap: .6rem; margin-bottom: 1.8rem; max-width: 46rem; }
+.sec-head p { color: var(--muted); }
+
+/* Doctors */
+.docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.25rem; }
+.doc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: .5rem; align-content: start; }
+.doc .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
+.doc ul { margin: .3rem 0 0; padding-inline-start: 1.1rem; color: var(--muted); }
+
+/* Inflammatory vs mechanical table */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.tbl table { width: 100%; border-collapse: collapse; min-width: 34rem; }
+.tbl th, .tbl td { text-align: right; padding: .75rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl thead th { background: var(--soft); font-size: .95rem; }
+.tbl tbody th { font-weight: 600; color: var(--muted); width: 26%; }
+.tbl tr:last-child th, .tbl tr:last-child td { border-bottom: 0; }
+.note { margin-top: 1rem; color: var(--muted); font-size: .95rem; }
+
+/* Condition accordions */
+.conds { display: grid; gap: .6rem; max-width: 52rem; }
+details.cond { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+details.cond summary { cursor: pointer; list-style: none; padding: 1rem 1.2rem; display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+details.cond summary::-webkit-details-marker { display: none; }
+details.cond summary h3 { font-size: 1.15rem; }
+details.cond summary .en { color: var(--muted); font-size: .85rem; direction: ltr; white-space: nowrap; }
+details.cond summary::after { content: "+"; color: var(--brand); font-weight: 700; font-size: 1.3rem; line-height: 1; }
+details.cond[open] summary::after { content: "–"; }
+details.cond .body { padding: 0 1.2rem 1.2rem; display: grid; gap: .6rem; }
+details.cond dl { margin: 0; display: grid; gap: .5rem; }
+details.cond dt { font-weight: 700; }
+details.cond dd { margin: 0; color: var(--muted); }
+.group-title { font-size: 1rem; color: var(--accent); font-family: var(--body); font-weight: 700; margin-block: 1.4rem .2rem; letter-spacing: .03em; }
+
+/* Two-column info lists */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 2rem; }
+.cols > div { min-width: 0; display: grid; gap: .6rem; align-content: start; }
+.cols ul { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .45rem; }
+.cols li b { color: var(--ink); }
+.cols li { color: var(--muted); }
+
+/* Red flags */
+.flags { background: var(--surface); border: 1px solid var(--line); border-inline-start: 4px solid var(--accent); border-radius: var(--radius); padding: 1.2rem 1.4rem; max-width: 46rem; }
+.flags ul { margin: .5rem 0 0; padding-inline-start: 1.2rem; display: grid; gap: .35rem; }
+
+/* Booking */
+.book { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: 1rem; }
+form.req { display: grid; gap: .9rem; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+label { display: grid; gap: .3rem; font-weight: 600; font-size: .95rem; }
+input, select, textarea {
+  font: inherit; font-weight: 400; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: .55rem .7rem; width: 100%;
+}
+textarea { min-height: 5.5rem; resize: vertical; }
+.fine { color: var(--muted); font-size: .88rem; }
+.result { background: var(--soft); border-radius: 8px; padding: 1rem; display: grid; gap: .6rem; }
+.result pre { margin: 0; white-space: pre-wrap; font-family: var(--body); font-size: .95rem; }
+.contact-list { display: grid; gap: .8rem; }
+.contact-list div { display: grid; }
+.contact-list span { color: var(--muted); font-size: .9rem; }
+.contact-list b { font-size: 1.1rem; }
+.ltr { direction: ltr; unicode-bidi: isolate; }
+
+/* FAQ */
+.faq { display: grid; gap: 1.2rem; max-width: 46rem; }
+.faq h3 { font-size: 1.1rem; margin-bottom: .25rem; }
+.faq p { color: var(--muted); }
+
+/* Footer */
+footer { background: var(--surface); border-top: 1px solid var(--line); padding-block: 2rem; font-size: .92rem; color: var(--muted); }
+footer .wrap { display: grid; gap: .8rem; }
+.disclaimer { max-width: 52rem; }
+
+@media (max-width: 760px) {
+  .hero .wrap, .book { grid-template-columns: 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+  .nav { display: none; }
+  .hero { padding-block: 2rem; }
+  section.block { padding-block: 2.5rem; }
+}
+
+/* Language switch and Arabic typography */
+.head-actions { display: flex; align-items: center; gap: .9rem; }
+.lang { color: var(--ink); font-weight: 700; text-decoration: none; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; }
+.lang:hover { border-color: var(--brand); color: var(--brand); }
+:lang(ar) { --display: "Noto Naskh Arabic", "Geeza Pro", "Arial", serif; --body: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Arial, sans-serif; }
+:lang(ar) .eyebrow, :lang(ar) .group-title { letter-spacing: 0; }
+:lang(he) { --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif; --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif; }
+
+/* Booking choice: Mushlam vs private */
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+.choice { align-content: start; }
+.choice .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
+.choice .btn { justify-self: start; }
+.hero h1 + .sub { font-family: var(--display); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); color: var(--brand); margin-block: -.4rem 1rem; text-wrap: balance; }
+.doc .pos { font-weight: 600; color: var(--brand); margin-top: -.3rem; }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>Prime<span>Med</span></b><small>מרפאת רופאים יועצים · טמרה</small></a>
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a href="#doctors">הרופאים</a>
+      <a href="#conditions">מחלות דלקתיות</a>
+      <a href="#diagnosis">אבחון וטיפול</a>
+      <a href="#faq">שאלות נפוצות</a>
+      <a href="#contact">הגעה</a>
+    </nav>
+    <div class="head-actions"><a class="lang" href="ar/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a class="btn" href="#book">קביעת תור</a></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">ראומטולוגיה · רפואה פנימית · אורתופדיה</p>
+      <h1>מרפאת מומחים יועצים עצמאיים</h1>
+      <p class="sub">שירות בתחומים שונים, כולל ראומטולוגיה ואורתופדיה, ובקרוב שירותים נוספים</p>
+      <p class="lead">PrimeMed נמצאת בטמרה מול. אנחנו מאבחנים ומטפלים בכאבי מפרקים, במחלות מפרקים דלקתיות ובמחלות אוטואימוניות, ומציעים ייעוץ אורתופדי מומחה.</p>
+      <div class="cta">
+        <a class="btn" href="#book">קביעת תור</a>
+        <a class="btn ghost" href="#conditions">מידע על מחלות</a>
+      </div>
+    </div>
+    <aside class="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">שעות קבלה</h2>
+      <table>
+        <tbody>
+          <tr><td>יום שלישי</td><td>16:00–21:00</td></tr>
+          <tr><td>יום רביעי</td><td>14:00–19:00</td></tr>
+          <tr class="closed"><td>שאר הימים</td><td>סגור</td></tr>
+        </tbody>
+      </table>
+      <p class="addr">טמרה מול, קומה ראשונה, הכביש הראשי, טמרה</p>
+    </aside>
+  </div>
+</section>
+
+<section class="block" id="doctors">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>הרופאים במרפאה</h2>
+      <p>במרפאה פועלים רופאים מומחים עצמאיים. כל מטופל נבדק אישית על ידי הרופא המומחה.</p>
+    </div>
+    <div class="docs">
+      <article class="doc">
+        <p class="role">מומחה ברפואה פנימית וראומטולוגיה</p>
+        <h3>ד״ר ניזאר חג׳אזי</h3>
+        <p class="pos">מנהל מחלקה פנימית ב׳, מרכז רפואי העמק</p>
+        <p>אבחון וטיפול במחלות מפרקים דלקתיות, מחלות רקמת חיבור ודלקות כלי דם, ובירור של כאבי מפרקים ותוצאות בדיקות חריגות.</p>
+        <ul>
+          <li>דלקת מפרקים שגרונית, פסוריאטית וספונדילוארתריטיס</li>
+          <li>גאוט (שיגדון) ומחלות גבישים</li>
+          <li>זאבת (לופוס), שיוגרן ודלקות כלי דם</li>
+          <li>מעקב וטיפול בתרופות ביולוגיות</li>
+        </ul>
+      </article>
+      <article class="doc">
+        <p class="role">מומחה באורתופדיה</p>
+        <h3>ד״ר פאדי חאזן</h3>
+        <p class="pos">סגן מנהל המחלקה האורתופדית, מרכז רפואי כרמל</p>
+        <p>אבחון וטיפול בבעיות אורתופדיות, כולל פציעות ושחיקה של הברך, החל מטיפול שמרני ועד הפניה לניתוח כשצריך.</p>
+        <ul>
+          <li>קרעים במניסקוס וברצועות (ACL)</li>
+          <li>שחיקת סחוס (אוסטאוארתריטיס) בברך</li>
+          <li>פציעות ספורט וכאבי ברך כרוניים</li>
+          <li>הזרקות למפרק הברך</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="when">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>כאב דלקתי או כאב מכני?</h2>
+      <p>לא כל כאב מפרקים הוא דלקתי. ההבחנה בין שני הסוגים עוזרת להחליט מתי כדאי לפנות לראומטולוג.</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">כאב דלקתי</th><th scope="col">כאב מכני (שחיקה, עומס)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">נוקשות בבוקר</th><td>ממושכת, לרוב יותר מ־30 דקות</td><td>קצרה, לרוב פחות מ־30 דקות</td></tr>
+          <tr><th scope="row">השפעת תנועה</th><td>משתפר בתנועה ובפעילות</td><td>מחמיר בפעילות ומשתפר במנוחה</td></tr>
+          <tr><th scope="row">נפיחות</th><td>נפיחות רכה וחום במפרק</td><td>לרוב ללא נפיחות משמעותית</td></tr>
+          <tr><th scope="row">גיל הופעה</th><td>כל גיל, גם בגיל צעיר</td><td>שכיח יותר עם הגיל</td></tr>
+          <tr><th scope="row">תסמינים נוספים</th><td>עייפות, חום קל, פריחה, דלקת עיניים</td><td>בדרך כלל ללא תסמינים כלליים</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">הטבלה היא כלל אצבע בלבד. רק בדיקה רפואית יכולה לקבוע את סוג הכאב ואת הגורם לו.</p>
+  </div>
+</section>
+
+<section class="block" id="conditions">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>מחלות שאנחנו מאבחנים ומטפלים בהן</h2>
+      <p>מידע כללי על המחלות השכיחות במרפאה. לחצו על מחלה כדי לקרוא עליה.</p>
+    </div>
+    <div class="conds">
+      <h3 class="group-title">מחלות מפרקים דלקתיות</h3>
+
+      <details class="cond">
+        <summary><h3>דלקת מפרקים שגרונית</h3><span class="en">Rheumatoid arthritis</span></summary>
+        <div class="body">
+          <p>מחלה אוטואימונית כרונית שבה מערכת החיסון תוקפת את קרום המפרק. היא פוגעת לרוב במפרקים הקטנים של כפות הידיים והרגליים, בשני צדי הגוף.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאב ונפיחות במפרקי האצבעות, שורש כף היד וכפות הרגליים, נוקשות בוקר ממושכת ועייפות.</dd>
+            <dt>אבחון</dt><dd>בדיקה גופנית, בדיקות דם (RF, Anti-CCP, שקיעת דם ו־CRP) והדמיה של המפרקים.</dd>
+            <dt>טיפול</dt><dd>טיפול מוקדם מונע נזק קבוע למפרקים. משתמשים בתרופות משנות מהלך מחלה כמו מתוטרקסט, ולפי הצורך בתרופות ביולוגיות או במעכבי JAK.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>דלקת מפרקים פסוריאטית</h3><span class="en">Psoriatic arthritis</span></summary>
+        <div class="body">
+          <p>דלקת מפרקים שמופיעה אצל חלק מהאנשים עם פסוריאזיס (ספחת), ולעיתים עוד לפני שמופיעה מחלת העור.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>נפיחות של מפרקים או של אצבע שלמה (״אצבע נקניקית״), כאב בגידים ובמקום חיבורם לעצם, כאבי גב ושינויים בציפורניים.</dd>
+            <dt>אבחון</dt><dd>אבחנה קלינית המבוססת על בדיקה, היסטוריה של פסוריאזיס, בדיקות דם והדמיה.</dd>
+            <dt>טיפול</dt><dd>נוגדי דלקת, תרופות משנות מהלך מחלה ותרופות ביולוגיות, שחלקן מטפלות גם במחלת העור.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>ספונדילוארתריטיס ובכטרב</h3><span class="en">Axial spondyloarthritis</span></summary>
+        <div class="body">
+          <p>מחלה דלקתית שפוגעת בעיקר בעמוד השדרה ובמפרקי האגן (הסקרואיליאקים). היא מתחילה לרוב לפני גיל 45.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאב גב תחתון כרוני שמחמיר במנוחה ובלילה ומשתפר בתנועה, נוקשות בוקר, ולעיתים דלקת עיניים (אובאיטיס).</dd>
+            <dt>אבחון</dt><dd>בדיקה גופנית, בדיקת HLA-B27, מדדי דלקת וצילום או MRI של מפרקי האגן.</dd>
+            <dt>טיפול</dt><dd>פעילות גופנית ופיזיותרפיה, נוגדי דלקת (NSAIDs), ובמידת הצורך תרופות ביולוגיות.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>גאוט (שיגדון)</h3><span class="en">Gout</span></summary>
+        <div class="body">
+          <p>דלקת מפרקים שנגרמת משקיעת גבישי חומצה אורית במפרק. התקף טיפוסי פוגע בבוהן הגדולה, אבל יכול להופיע בכל מפרק.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>התקף פתאומי של כאב חזק מאוד, אדמומיות, חום ונפיחות במפרק, לרוב בלילה.</dd>
+            <dt>אבחון</dt><dd>זיהוי גבישים בנוזל שנשאב מהמפרק, רמת חומצה אורית בדם ואולטרסאונד.</dd>
+            <dt>טיפול</dt><dd>טיפול בהתקף (נוגדי דלקת, קולכיצין או סטרואידים) וטיפול מונע להורדת החומצה האורית, כמו אלופורינול, יחד עם שינויים בתזונה.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>פולימיאלגיה ראומטיקה</h3><span class="en">Polymyalgia rheumatica</span></summary>
+        <div class="body">
+          <p>מחלה דלקתית של אנשים מעל גיל 50, שגורמת לכאבים ולנוקשות בכתפיים ובאגן.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאב ונוקשות בכתפיים, בצוואר ובירכיים, קושי לקום מהמיטה בבוקר ועייפות.</dd>
+            <dt>אבחון</dt><dd>תמונה קלינית אופיינית ומדדי דלקת מוגברים, אחרי שלילת מחלות אחרות.</dd>
+            <dt>טיפול</dt><dd>סטרואידים במינון נמוך עם הורדה הדרגתית ומעקב. חשוב לשים לב לתסמינים של דלקת עורק הרקה (ראו בהמשך).</dd>
+          </dl>
+        </div>
+      </details>
+
+      <h3 class="group-title">מחלות רקמת חיבור ודלקות כלי דם</h3>
+
+      <details class="cond">
+        <summary><h3>זאבת (לופוס)</h3><span class="en">Systemic lupus erythematosus</span></summary>
+        <div class="body">
+          <p>מחלה אוטואימונית שיכולה לפגוע באיברים רבים: עור, מפרקים, כליות, דם ומערכת העצבים. היא שכיחה יותר בנשים צעירות.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאבי מפרקים, פריחה בפנים או רגישות לשמש, כיבים בפה, נשירת שיער, עייפות וחום.</dd>
+            <dt>אבחון</dt><dd>בדיקות דם לנוגדנים (ANA, Anti-dsDNA), ספירת דם, בדיקות שתן ותפקודי כליות.</dd>
+            <dt>טיפול</dt><dd>הידרוקסיכלורוקווין (פלקווניל) כבסיס, ולפי מעורבות האיברים סטרואידים, תרופות מדכאות חיסון או תרופות ביולוגיות.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>תסמונת שיוגרן</h3><span class="en">Sjögren’s disease</span></summary>
+        <div class="body">
+          <p>מחלה אוטואימונית שפוגעת בעיקר בבלוטות הדמע והרוק.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>יובש בעיניים ובפה, כאבי מפרקים, עייפות, ולעיתים נפיחות של בלוטות הרוק.</dd>
+            <dt>אבחון</dt><dd>בדיקות דם (Anti-Ro/SSA), בדיקות ייצור דמעות ורוק, ולעיתים ביופסיה משפה.</dd>
+            <dt>טיפול</dt><dd>טיפות ותחליפי רוק, טיפול בכאבי המפרקים ומעקב אחר מעורבות של איברים נוספים.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>דלקות כלי דם</h3><span class="en">Vasculitis</span></summary>
+        <div class="body">
+          <p>קבוצת מחלות שבהן יש דלקת בדפנות כלי הדם. דוגמה שכיחה מעל גיל 50 היא דלקת עורק הרקה (Giant cell arteritis).</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאב ראש חדש, כאב בלסת בזמן לעיסה, הפרעות ראייה, חום, ירידה במשקל ופריחה.</dd>
+            <dt>אבחון</dt><dd>בדיקות דם ושתן, נוגדנים ייעודיים (ANCA), הדמיה ולעיתים ביופסיה.</dd>
+            <dt>טיפול</dt><dd>סטרואידים ותרופות מדכאות חיסון. הפרעת ראייה פתאומית עם כאב ראש מחייבת פנייה מיידית לחדר מיון.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <h3 class="group-title">מפרקים ושרירים</h3>
+
+      <details class="cond">
+        <summary><h3>אוסטאוארתריטיס (שחיקת מפרקים)</h3><span class="en">Osteoarthritis</span></summary>
+        <div class="body">
+          <p>המחלה השכיחה ביותר של המפרקים. השחיקה בסחוס פוגעת בעיקר בברכיים, בירכיים ובמפרקי האצבעות. אינה מחלה דלקתית במובן הקלאסי, אך חשוב להבדיל בינה לבין מחלות דלקתיות.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאב שמחמיר בפעילות, נוקשות קצרה אחרי מנוחה וירידה בטווח התנועה.</dd>
+            <dt>אבחון</dt><dd>בדיקה גופנית וצילום רנטגן.</dd>
+            <dt>טיפול</dt><dd>ירידה במשקל, פיזיותרפיה וחיזוק שרירים, משככי כאבים, הזרקות למפרק, ובשלב מתקדם הערכה אורתופדית לניתוח.</dd>
+          </dl>
+        </div>
+      </details>
+
+      <details class="cond">
+        <summary><h3>פיברומיאלגיה</h3><span class="en">Fibromyalgia</span></summary>
+        <div class="body">
+          <p>תסמונת של כאב מפושט כרוני ללא דלקת או נזק במפרקים, הקשורה לרגישות מוגברת של מערכת העצבים לכאב.</p>
+          <dl>
+            <dt>תסמינים</dt><dd>כאבים מפושטים בגוף, עייפות, שינה לא מרעננת וקשיי ריכוז.</dd>
+            <dt>אבחון</dt><dd>אבחנה קלינית, לאחר שלילת מחלות דלקתיות ואחרות.</dd>
+            <dt>טיפול</dt><dd>פעילות גופנית מותאמת והדרגתית, שיפור השינה, הדרכה, ולעיתים טיפול תרופתי.</dd>
+          </dl>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="diagnosis">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>אבחון וטיפול</h2>
+      <p>הבירור מתחיל בשיחה מפורטת ובבדיקה גופנית. לפי הצורך משלימים בדיקות ומתאימים טיפול אישי.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h3>בדיקות שכיחות</h3>
+        <ul>
+          <li><b>מדדי דלקת:</b> שקיעת דם (ESR) ו־CRP</li>
+          <li><b>נוגדנים:</b> RF, Anti-CCP, ANA ואחרים לפי החשד</li>
+          <li><b>גנטיקה:</b> HLA-B27 בחשד למחלת עמוד שדרה דלקתית</li>
+          <li><b>חומצה אורית</b> בחשד לגאוט</li>
+          <li><b>הדמיה:</b> צילום רנטגן, אולטרסאונד מפרקים ו־MRI</li>
+          <li><b>שאיבת נוזל מהמפרק</b> לבדיקת גבישים וזיהום</li>
+        </ul>
+      </div>
+      <div>
+        <h3>אפשרויות טיפול</h3>
+        <ul>
+          <li><b>נוגדי דלקת</b> (NSAIDs) להקלה על כאב ונוקשות</li>
+          <li><b>סטרואידים</b> לטווח קצר או בהזרקה למפרק</li>
+          <li><b>תרופות משנות מהלך מחלה:</b> מתוטרקסט, סולפסלזין, הידרוקסיכלורוקווין, לפלונומיד</li>
+          <li><b>תרופות ביולוגיות:</b> כמו חוסמי TNF, IL-17 ו־IL-6</li>
+          <li><b>מעכבי JAK</b> בכדורים</li>
+          <li><b>פעילות גופנית, פיזיותרפיה ותזונה</b> כחלק מכל טיפול</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flags" style="margin-top:2rem">
+      <h3>מתי כדאי לפנות לראומטולוג?</h3>
+      <ul>
+        <li>נפיחות במפרק אחד או יותר שנמשכת יותר משבועות ספורים</li>
+        <li>נוקשות בוקר שנמשכת יותר מחצי שעה</li>
+        <li>כאב גב כרוני שמתחיל לפני גיל 45 ומשתפר בתנועה</li>
+        <li>תוצאות בדיקה חריגות כמו ANA או RF חיוביים, או מדדי דלקת גבוהים</li>
+        <li>התקפים חוזרים של מפרק נפוח, אדום וכואב</li>
+      </ul>
+      <p class="note">מפרק חם ונפוח עם חום גבוה, או הפרעת ראייה פתאומית, מחייבים פנייה מיידית לחדר מיון ולא לתור במרפאה.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="book">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>קביעת תור</h2>
+      <p>בחרו את סוג התור המתאים לכם.</p>
+    </div>
+<div class="choices">
+      <div class="panel choice">
+        <p class="role">למבוטחי כללית מושלם</p>
+        <h3>תור במסגרת המושלם</h3>
+        <p>בחרו שעה פנויה ביומן התורים המקוון, והתור נקבע מיד.</p>
+        <a class="btn" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener">בחירת שעה ביומן</a>
+      </div>
+      <div class="panel choice">
+        <p class="role">למבוטחי כל הקופות</p>
+        <h3>תור פרטי</h3>
+        <p>השאירו פרטים, והמזכירה תחזור אליכם לתיאום התור.</p>
+        <a class="btn ghost" href="#req">בקשה לתור פרטי</a>
+      </div>
+    </div>
+    <div class="book">
+      <div class="panel">
+        <h3>בקשה לתור פרטי</h3>
+        <form class="req" id="req" novalidate>
+          <div class="row2">
+            <label for="f-name">שם מלא<input id="f-name" name="name" required autocomplete="name"></label>
+            <label for="f-phone">טלפון<input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" dir="ltr"></label>
+          </div>
+          <label for="f-doc">רופא
+              <select id="f-doc" name="doctor">
+                <option>ראומטולוגיה ורפואה פנימית</option>
+                <option>אורתופדיה</option>
+                <option>לא בטוח/ה</option>
+              </select>
+            </label>
+          <label for="f-reason">סיבת הפנייה (לא חובה)<textarea id="f-reason" name="reason" placeholder="למשל: כאבים ונפיחות בכפות הידיים מזה חודשיים"></textarea></label>
+          <p class="fine" id="f-err" hidden>נא למלא שם ומספר טלפון.</p>
+          <button class="btn" type="submit">הכנת הבקשה לשליחה בוואטסאפ</button>
+          <p class="fine">הבקשה נשלחת מהטלפון שלכם בוואטסאפ למזכירות. המזכירה תיצור אתכם קשר כדי לקבוע את התור. אין לשלוח מידע רפואי רגיש או דחוף.</p>
+        </form>
+        <div class="result" id="req-out" hidden>
+          <p><b>הבקשה מוכנה.</b> לחצו על הכפתור כדי לפתוח את וואטסאפ ולשלוח אותה. אם וואטסאפ לא נפתח, העתיקו את הטקסט ושלחו אותו למספר המרפאה.</p>
+          <pre id="req-text"></pre>
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap">
+            <a class="btn" id="req-wa" href="#" target="_blank" rel="noopener">פתיחה בוואטסאפ</a>
+            <button class="btn ghost" type="button" id="req-copy">העתקת הטקסט</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="contact">
+        <h3>יצירת קשר והגעה</h3>
+        <div class="contact-list">
+          <div><span>תור במסגרת המושלם</span><a class="btn ghost" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener" id="online-booking">ליומן התורים</a></div>
+          <div><span>טלפון המזכירות</span><a class="ltr" href="tel:+97246402020"><b>04-640-2020</b></a></div>
+          <div><span>וואטסאפ</span><a class="ltr" href="https://wa.me/972503593893" target="_blank" rel="noopener"><b>050-359-3893</b></a></div>
+          <div><span>כתובת</span><b>טמרה מול, קומה ראשונה, הכביש הראשי, טמרה</b></div>
+          <div><span>ניווט</span><a href="https://www.google.com/maps/search/?api=1&amp;query=%D7%98%D7%9E%D7%A8%D7%94+%D7%9E%D7%95%D7%9C" target="_blank" rel="noopener">פתיחה במפות גוגל</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>שאלות נפוצות</h2></div>
+    <div class="faq">
+      <div><h3>מה להביא לביקור הראשון?</h3><p>תעודה מזהה, רשימת התרופות שאתם נוטלים, תוצאות בדיקות דם קודמות, צילומים ופענוחים, ומכתבי שחרור או סיכומי ביקור רלוונטיים.</p></div>
+      <div><h3>האם צריך הפניה מרופא משפחה?</h3><p>אפשר לקבוע תור ישירות. אם יש לכם הפניה או מכתב מרופא המשפחה, הביאו אותם לביקור.</p></div>
+      <div><h3>כמה זמן נמשך ביקור ראשון?</h3><p>ביקור ראשון כולל שיחה מפורטת ובדיקה גופנית, ולכן הוא ארוך יותר מביקור מעקב.</p></div>
+      <div><h3>האם ניתן לקבל החזר מהביטוח?</h3><p>ההחזר תלוי בביטוח המשלים או הפרטי שלכם. מומלץ לבדוק מול חברת הביטוח לפני הביקור.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>PrimeMed</b> · מרפאת רופאים יועצים · טמרה מול, קומה ראשונה, טמרה</p>
+    <p class="disclaimer">המידע באתר הוא מידע כללי בלבד ואינו מהווה תחליף לייעוץ, אבחון או טיפול רפואי. אין להתחיל, להפסיק או לשנות טיפול תרופתי ללא התייעצות עם רופא. במצב חירום יש לפנות למד״א (101) או לחדר המיון הקרוב.</p>
+  </div>
+</footer>
+
+
+<script>// Appointment request form: builds a WhatsApp message for the clinic secretary.
+function initBooking(root) {
+  // Clinic WhatsApp number in international format, digits only 
+  var CLINIC_WA = "972503593893";
+  var T = {
+    he: { hi: "שלום, אבקש לקבוע תור פרטי במרפאת PrimeMed. אשמח שתחזרו אליי.", name: "שם", phone: "טלפון", doc: "תחום", day: "יום מועדף", reason: "סיבת הפנייה", copied: "הועתק", select: "סמנו והעתיקו" },
+    ar: { hi: "مرحبًا، أود حجز موعد خاص في عيادة PrimeMed. أرجو التواصل معي.", name: "الاسم", phone: "الهاتف", doc: "المجال", day: "اليوم المفضّل", reason: "سبب التوجه", copied: "تم النسخ", select: "حدّدوا النص وانسخوه" }
+  };
+  var form = root.querySelector("#req");
+  if (!form) return;
+  var langEl = form.closest("[lang]");
+  var t = T[langEl && langEl.getAttribute("lang") === "ar" ? "ar" : "he"];
+  var out = root.querySelector("#req-out");
+  var err = root.querySelector("#f-err");
+  var textEl = root.querySelector("#req-text");
+  function v(id) { return root.querySelector("#" + id).value.trim(); }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = v("f-name"), phone = v("f-phone");
+    if (!name || !phone) { err.hidden = false; return; }
+    err.hidden = true;
+    var lines = [t.hi, t.name + ": " + name, t.phone + ": " + phone, t.doc + ": " + v("f-doc")];
+    var reason = v("f-reason");
+    if (reason) lines.push(t.reason + ": " + reason);
+    var msg = lines.join("\n");
+    textEl.textContent = msg;
+    root.querySelector("#req-wa").href = "https://wa.me/" + CLINIC_WA + "?text=" + encodeURIComponent(msg);
+    out.hidden = false;
+    out.scrollIntoView({ block: "nearest" });
+  });
+  root.querySelector("#req-copy").addEventListener("click", function () {
+    var btn = this;
+    function select() {
+      var r = document.createRange(); r.selectNodeContents(textEl);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = t.select;
+    }
+    try { navigator.clipboard.writeText(textEl.textContent).then(function () { btn.textContent = t.copied; }, select); }
+    catch (x) { select(); }
+  });
+}
+initBooking(document);</script>
+</body>
+</html>
