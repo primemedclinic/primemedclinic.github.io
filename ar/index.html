@@ -9,188 +9,266 @@
 <meta property="og:type" content="website"><meta property="og:title" content="PrimeMed | طبيب روماتيزم في طمرة"><meta property="og:description" content="عيادة PrimeMed في طمرة مول: طب الروماتيزم والطب الباطني وجراحة العظام. معلومات عن أمراض المفاصل الالتهابية والتشخيص والعلاج وحجز موعد."><meta property="og:locale" content="ar_IL">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "PrimeMed", "telephone": "+972-4-640-2020", "description": "عيادة PrimeMed في طمرة مول: طب الروماتيزم والطب الباطني وجراحة العظام. معلومات عن أمراض المفاصل الالتهابية والتشخيص والعلاج وحجز موعد.", "url": "https://primemedclinic.github.io/ar/", "address": {"@type": "PostalAddress", "streetAddress": "طمرة مول، الطابق الأول، الشارع الرئيسي", "addressLocality": "طمرة", "addressCountry": "IL"}, "medicalSpecialty": ["Rheumatologic", "Musculoskeletal"], "availableLanguage": ["he", "ar"], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "16:00", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "19:00"}]}</script>
-<style>/* Layout: one calm reading column (≈68ch) for patient content, framed by a wide header band; RTL throughout. */
+<style>/* Layout: warm, welcoming clinic. Soft color fields per section, one calm reading column for medical text; RTL throughout.
+   Color roles: teal = clinic / rheumatology, coral = orthopedics & warmth, sun = highlights, sky = information. */
 :root {
-  --bg: #f6f8f7;
+  --bg: #fbfaf7;
   --surface: #ffffff;
-  --ink: #12302f;
-  --muted: #4d6362;
-  --line: #d5dfdd;
-  --brand: #0e5a57;
+  --ink: #17302f;
+  --muted: #4f6462;
+  --line: #e3e7e4;
+  --brand: #0f766e;
   --brand-ink: #ffffff;
-  --accent: #b5651d;
-  --soft: #e6efed;
+  --brand-tint: #e3f4f1;
+  --coral: #d9604a;
+  --coral-tint: #fdece7;
+  --sun: #c98a12;
+  --sun-tint: #fdf3dc;
+  --sky: #2f6fae;
+  --sky-tint: #e6f0fa;
+  --plum: #7a4f9a;
+  --plum-tint: #f1eaf7;
+  --accent: var(--coral);
+  --soft: #f3f6f4;
+  --shadow: 0 1px 2px rgba(23, 48, 47, .06), 0 8px 24px rgba(23, 48, 47, .07);
+  --foot-bg: #0f4f4a;
+  --foot-ink: #d7ece8;
   --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif;
   --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif;
-  --radius: 10px;
+  --radius: 16px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
-    --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+    --bg: #0e1918; --surface: #142321; --ink: #e6efed; --muted: #a8bcb9; --line: #263a38;
+    --brand: #4fbfb3; --brand-ink: #05211e; --brand-tint: #16302d;
+    --coral: #f08a74; --coral-tint: #3a2421; --sun: #e9b84f; --sun-tint: #352c17;
+    --sky: #7fb2e5; --sky-tint: #182a3b; --plum: #c4a3e0; --plum-tint: #2a2236;
+    --soft: #12201f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    --foot-bg: #0a1413; --foot-ink: #a8bcb9; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f1a1a; --surface: #152423; --ink: #e4eeec; --muted: #a3b8b5; --line: #2a3d3c;
-  --brand: #4fb3ab; --brand-ink: #062221; --accent: #e3a067; --soft: #1b2f2e; color-scheme: dark;
+  --bg: #0e1918; --surface: #142321; --ink: #e6efed; --muted: #a8bcb9; --line: #263a38;
+  --brand: #4fbfb3; --brand-ink: #05211e; --brand-tint: #16302d;
+  --coral: #f08a74; --coral-tint: #3a2421; --sun: #e9b84f; --sun-tint: #352c17;
+  --sky: #7fb2e5; --sky-tint: #182a3b; --plum: #c4a3e0; --plum-tint: #2a2236;
+  --soft: #12201f; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --foot-bg: #0a1413; --foot-ink: #a8bcb9; color-scheme: dark;
 }
+:lang(ar) { --display: "Noto Naskh Arabic", "Geeza Pro", "Arial", serif; --body: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Arial, sans-serif; }
+:lang(he) { --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif; --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
-  font-family: var(--body); font-size: 1.0625rem; line-height: 1.7;
+  font-family: var(--body); font-size: 1.125rem; line-height: 1.75;
 }
 a { color: var(--brand); }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
-  outline: 3px solid var(--accent); outline-offset: 2px;
+  outline: 3px solid var(--sun); outline-offset: 2px;
 }
 h1, h2, h3 { font-family: var(--display); line-height: 1.25; text-wrap: balance; margin: 0; }
-h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem); }
-h3 { font-size: 1.25rem; }
+h2 { font-size: clamp(1.7rem, 1.25rem + 1.5vw, 2.25rem); }
+h3 { font-size: 1.3rem; }
 p { margin: 0; }
+svg.i { width: 1.4em; height: 1.4em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 .wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 16px; }
-.col { max-width: 46rem; }
 
 /* Header */
 .site-head {
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
-  background: var(--surface); border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
 }
 .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; flex-wrap: wrap; }
-.logo { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
+.logo { display: flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); }
+.logo::before { content: ""; width: 1.9rem; height: 1.9rem; border-radius: 50%; flex: none;
+  background: radial-gradient(circle at 35% 35%, var(--sun) 0 28%, transparent 29%), linear-gradient(135deg, var(--brand), var(--coral)); }
 .logo b { font-family: var(--display); font-size: 1.5rem; letter-spacing: .01em; }
-.logo b span { color: var(--brand); }
+.logo b span { color: var(--coral); }
 .logo small { color: var(--muted); font-size: .85rem; }
-.nav { display: flex; gap: .25rem 1rem; flex-wrap: wrap; font-size: .95rem; }
-.nav a { color: var(--ink); text-decoration: none; padding-block: .2rem; }
-.nav a:hover { color: var(--brand); text-decoration: underline; }
+.nav { display: flex; gap: .25rem 1.1rem; flex-wrap: wrap; font-size: 1rem; }
+.nav a { color: var(--ink); text-decoration: none; padding-block: .2rem; border-bottom: 2px solid transparent; }
+.nav a:hover { color: var(--brand); border-bottom-color: var(--sun); }
+.head-actions { display: flex; align-items: center; gap: .9rem; }
+.lang { color: var(--ink); font-weight: 700; text-decoration: none; padding: .3rem .8rem; border-radius: 999px; background: var(--sun-tint); }
+.lang:hover { color: var(--brand); }
 .btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
   background: var(--brand); color: var(--brand-ink); border: 0; border-radius: 999px;
-  padding: .65rem 1.3rem; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+  padding: .7rem 1.4rem; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--brand) 30%, transparent);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
-.btn:hover { filter: brightness(1.08); }
-.btn.ghost { background: transparent; color: var(--brand); box-shadow: inset 0 0 0 2px var(--brand); }
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px color-mix(in srgb, var(--brand) 38%, transparent); }
+.btn.ghost { background: var(--surface); color: var(--brand); box-shadow: inset 0 0 0 2px var(--brand); }
+.btn.warm { background: var(--coral); color: #fff; box-shadow: 0 4px 14px color-mix(in srgb, var(--coral) 30%, transparent); }
 
-/* Hero */
-.hero { padding-block: 3rem 2.5rem; border-bottom: 1px solid var(--line); }
-.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
-.eyebrow { color: var(--accent); font-weight: 700; font-size: .9rem; letter-spacing: .04em; }
-.hero h1 { font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.9rem); margin-block: .4rem 1rem; }
+/* Hero: soft color fields */
+.hero { position: relative; overflow: hidden; padding-block: 3.5rem 3rem;
+  background:
+    radial-gradient(38rem 24rem at 100% 0%, var(--brand-tint), transparent 70%),
+    radial-gradient(30rem 22rem at 0% 100%, var(--coral-tint), transparent 70%),
+    radial-gradient(22rem 16rem at 55% 10%, var(--sun-tint), transparent 70%),
+    var(--bg); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+.chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.chip { font-size: .9rem; font-weight: 700; padding: .25rem .8rem; border-radius: 999px; }
+.chip:nth-child(1) { background: var(--brand-tint); color: var(--brand); }
+.chip:nth-child(2) { background: var(--sky-tint); color: var(--sky); }
+.chip:nth-child(3) { background: var(--coral-tint); color: var(--coral); }
+.hero h1 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.1rem); margin-block: 1rem .6rem; }
+.hero h1 + .sub { font-family: var(--display); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); color: var(--brand); margin-bottom: 1rem; text-wrap: balance; }
 .hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 38rem; }
-.hero .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
-.hours { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.4rem; }
-.hours h2 { font-size: 1.2rem; margin-bottom: .6rem; }
-.hours table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-.hours td { padding-block: .45rem; border-bottom: 1px dashed var(--line); }
-.hours td:last-child { text-align: left; direction: ltr; }
-.hours .closed td { color: var(--muted); }
-.hours .addr { margin-top: .9rem; font-size: .95rem; color: var(--muted); }
+.hero .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.hours { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.hours h2 { font-size: 1.2rem; padding: .9rem 1.4rem; background: var(--brand); color: var(--brand-ink); display: flex; align-items: center; gap: .5rem; }
+.hours table { width: calc(100% - 2.8rem); margin: .6rem 1.4rem 0; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hours td { padding-block: .55rem; border-bottom: 1px dashed var(--line); }
+.hours td:first-child { font-weight: 600; }
+.hours td:last-child { text-align: left; direction: ltr; color: var(--brand); font-weight: 700; }
+.hours .closed td { color: var(--muted); font-weight: 400; }
+.hours .addr { margin: .9rem 1.4rem 1.2rem; font-size: .95rem; color: var(--muted); display: flex; gap: .4rem; align-items: start; }
+.hours .addr svg { color: var(--coral); margin-top: .2rem; }
+
+/* Highlights strip */
+.highlights { padding-block: 1.25rem; background: var(--surface); border-block: 1px solid var(--line); }
+.highlights ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; }
+.highlights li { display: flex; align-items: center; gap: .7rem; font-weight: 600; }
+.highlights .dot { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%; flex: none; }
+.highlights li:nth-child(1) .dot { background: var(--brand-tint); color: var(--brand); }
+.highlights li:nth-child(2) .dot { background: var(--coral-tint); color: var(--coral); }
+.highlights li:nth-child(3) .dot { background: var(--sky-tint); color: var(--sky); }
 
 /* Sections */
-section.block { padding-block: 3.5rem; }
-section.block + section.block { border-top: 1px solid var(--line); }
+section.block { padding-block: 4rem; }
 section.alt { background: var(--soft); }
-.sec-head { display: grid; gap: .6rem; margin-bottom: 1.8rem; max-width: 46rem; }
+.sec-head { display: grid; gap: .7rem; margin-bottom: 2rem; max-width: 46rem; }
+.sec-head h2::after { content: ""; display: block; width: 3.5rem; height: .3rem; border-radius: 999px; margin-top: .6rem;
+  background: linear-gradient(90deg, var(--sun), var(--coral)); }
 .sec-head p { color: var(--muted); }
 
 /* Doctors */
-.docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.25rem; }
-.doc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: .5rem; align-content: start; }
-.doc .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
-.doc ul { margin: .3rem 0 0; padding-inline-start: 1.1rem; color: var(--muted); }
+.docs { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; }
+.doc { --c: var(--brand); --t: var(--brand-tint); background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 1.5rem; display: grid; gap: .5rem; align-content: start; border-top: 6px solid var(--c); }
+.doc.ortho { --c: var(--coral); --t: var(--coral-tint); }
+.doc .avatar { width: 3.6rem; height: 3.6rem; border-radius: 50%; display: grid; place-items: center; background: var(--t); color: var(--c);
+  font-family: var(--display); font-weight: 700; font-size: 1.35rem; margin-bottom: .3rem; }
+.doc .role { color: var(--c); font-weight: 700; font-size: .95rem; }
+.doc .pos { font-weight: 600; color: var(--ink); background: var(--t); padding: .3rem .7rem; border-radius: 10px; justify-self: start; font-size: .95rem; }
+.doc ul { margin: .3rem 0 0; padding: 0; list-style: none; display: grid; gap: .35rem; color: var(--muted); }
+.doc li { display: flex; gap: .55rem; }
+.doc li::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--c); margin-top: .7rem; flex: none; }
 
 /* Inflammatory vs mechanical table */
-.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.tbl { overflow-x: auto; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
 .tbl table { width: 100%; border-collapse: collapse; min-width: 34rem; }
-.tbl th, .tbl td { text-align: right; padding: .75rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-.tbl thead th { background: var(--soft); font-size: .95rem; }
-.tbl tbody th { font-weight: 600; color: var(--muted); width: 26%; }
+.tbl th, .tbl td { text-align: right; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl thead th { font-size: 1rem; }
+.tbl thead th:nth-child(2) { background: var(--coral-tint); color: var(--coral); }
+.tbl thead th:nth-child(3) { background: var(--sky-tint); color: var(--sky); }
+.tbl tbody td:nth-child(2) { background: color-mix(in srgb, var(--coral-tint) 40%, transparent); }
+.tbl tbody td:nth-child(3) { background: color-mix(in srgb, var(--sky-tint) 40%, transparent); }
+.tbl tbody th { font-weight: 700; color: var(--ink); width: 24%; }
 .tbl tr:last-child th, .tbl tr:last-child td { border-bottom: 0; }
 .note { margin-top: 1rem; color: var(--muted); font-size: .95rem; }
 
-/* Condition accordions */
-.conds { display: grid; gap: .6rem; max-width: 52rem; }
-details.cond { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
-details.cond summary { cursor: pointer; list-style: none; padding: 1rem 1.2rem; display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+/* Condition accordions, color-coded by group */
+.conds { display: grid; gap: .7rem; max-width: 52rem; }
+.group-title { --gc: var(--coral); --gt: var(--coral-tint); font-size: 1rem; font-family: var(--body); font-weight: 700;
+  margin-block: 1.6rem .2rem; color: var(--gc); background: var(--gt); justify-self: start; padding: .25rem .9rem; border-radius: 999px; }
+.group-title:first-child { margin-top: 0; }
+details.cond { --gc: var(--coral); --gt: var(--coral-tint); }
+.group-title.g2, .g2 ~ details.cond { --gc: var(--plum); --gt: var(--plum-tint); }
+.group-title.g3, .g3 ~ details.cond { --gc: var(--sky); --gt: var(--sky-tint); }
+details.cond { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); border-inline-start: 5px solid var(--gc); }
+details.cond summary { cursor: pointer; list-style: none; padding: 1rem 1.25rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
 details.cond summary::-webkit-details-marker { display: none; }
-details.cond summary h3 { font-size: 1.15rem; }
-details.cond summary .en { color: var(--muted); font-size: .85rem; direction: ltr; white-space: nowrap; }
-details.cond summary::after { content: "+"; color: var(--brand); font-weight: 700; font-size: 1.3rem; line-height: 1; }
+details.cond summary h3 { font-size: 1.2rem; }
+details.cond summary .en { color: var(--muted); font-size: .85rem; direction: ltr; white-space: nowrap; margin-inline-start: auto; }
+details.cond summary::after { content: "+"; display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; flex: none;
+  background: var(--gt); color: var(--gc); font-weight: 700; font-size: 1.2rem; line-height: 1; }
 details.cond[open] summary::after { content: "–"; }
-details.cond .body { padding: 0 1.2rem 1.2rem; display: grid; gap: .6rem; }
-details.cond dl { margin: 0; display: grid; gap: .5rem; }
-details.cond dt { font-weight: 700; }
+details.cond[open] { background: linear-gradient(var(--surface), var(--surface)) padding-box; }
+details.cond .body { padding: 0 1.25rem 1.25rem; display: grid; gap: .7rem; }
+details.cond dl { margin: 0; display: grid; gap: .6rem; }
+details.cond dt { font-weight: 700; color: var(--gc); }
 details.cond dd { margin: 0; color: var(--muted); }
-.group-title { font-size: 1rem; color: var(--accent); font-family: var(--body); font-weight: 700; margin-block: 1.4rem .2rem; letter-spacing: .03em; }
 
-/* Two-column info lists */
-.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 2rem; }
-.cols > div { min-width: 0; display: grid; gap: .6rem; align-content: start; }
-.cols ul { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .45rem; }
+/* Diagnosis & treatment */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.5rem; }
+.cols > div { min-width: 0; display: grid; gap: .8rem; align-content: start; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; }
+.cols h3 { display: flex; align-items: center; gap: .6rem; }
+.cols h3 .dot { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; }
+.cols > div:nth-child(1) .dot { background: var(--sky-tint); color: var(--sky); }
+.cols > div:nth-child(2) .dot { background: var(--brand-tint); color: var(--brand); }
+.cols ul { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .5rem; }
 .cols li b { color: var(--ink); }
 .cols li { color: var(--muted); }
+.cols li::marker { color: var(--sun); }
 
-/* Red flags */
-.flags { background: var(--surface); border: 1px solid var(--line); border-inline-start: 4px solid var(--accent); border-radius: var(--radius); padding: 1.2rem 1.4rem; max-width: 46rem; }
-.flags ul { margin: .5rem 0 0; padding-inline-start: 1.2rem; display: grid; gap: .35rem; }
+/* When to see a rheumatologist */
+.flags { background: var(--sun-tint); border-radius: var(--radius); padding: 1.4rem 1.6rem; max-width: 46rem; }
+.flags h3 { color: var(--ink); }
+.flags ul { margin: .6rem 0 0; padding-inline-start: 1.2rem; display: grid; gap: .4rem; }
+.flags li::marker { color: var(--sun); }
+.flags .note { color: var(--ink); background: var(--surface); padding: .7rem 1rem; border-radius: 10px; border-inline-start: 4px solid var(--coral); }
 
 /* Booking */
-.book { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
-.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; display: grid; gap: 1rem; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem; margin-bottom: 1.75rem; }
+.panel { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; display: grid; gap: 1rem; }
+.choice { --c: var(--brand); --t: var(--brand-tint); align-content: start; border-top: 6px solid var(--c); }
+.choice.private { --c: var(--coral); --t: var(--coral-tint); }
+.choice .ic { display: grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 14px; background: var(--t); color: var(--c); }
+.choice .role { color: var(--c); font-weight: 700; font-size: .95rem; }
+.choice .btn { justify-self: start; }
+.choice.private .btn { background: var(--coral); color: #fff; box-shadow: 0 4px 14px color-mix(in srgb, var(--coral) 30%, transparent); }
+.book { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 form.req { display: grid; gap: .9rem; }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
-label { display: grid; gap: .3rem; font-weight: 600; font-size: .95rem; }
+label { display: grid; gap: .3rem; font-weight: 600; font-size: 1rem; }
 input, select, textarea {
   font: inherit; font-weight: 400; color: var(--ink); background: var(--bg);
-  border: 1px solid var(--line); border-radius: 8px; padding: .55rem .7rem; width: 100%;
+  border: 1.5px solid var(--line); border-radius: 12px; padding: .6rem .8rem; width: 100%;
 }
+input:focus, select:focus, textarea:focus { border-color: var(--brand); }
 textarea { min-height: 5.5rem; resize: vertical; }
-.fine { color: var(--muted); font-size: .88rem; }
-.result { background: var(--soft); border-radius: 8px; padding: 1rem; display: grid; gap: .6rem; }
+.fine { color: var(--muted); font-size: .9rem; }
+.result { background: var(--brand-tint); border-radius: 12px; padding: 1rem; display: grid; gap: .6rem; }
 .result pre { margin: 0; white-space: pre-wrap; font-family: var(--body); font-size: .95rem; }
-.contact-list { display: grid; gap: .8rem; }
+.contact-list { display: grid; gap: .9rem; }
 .contact-list div { display: grid; }
 .contact-list span { color: var(--muted); font-size: .9rem; }
-.contact-list b { font-size: 1.1rem; }
+.contact-list b { font-size: 1.15rem; }
 .ltr { direction: ltr; unicode-bidi: isolate; }
 
 /* FAQ */
-.faq { display: grid; gap: 1.2rem; max-width: 46rem; }
-.faq h3 { font-size: 1.1rem; margin-bottom: .25rem; }
+.faq { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.25rem; }
+.faq > div { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.3rem 1.4rem; }
+.faq h3 { font-size: 1.15rem; margin-bottom: .4rem; display: flex; gap: .55rem; align-items: baseline; }
+.faq h3::before { content: "?"; display: grid; place-items: center; flex: none; width: 1.7rem; height: 1.7rem; border-radius: 50%;
+  background: var(--sun-tint); color: var(--sun); font-family: var(--body); font-size: 1rem; font-weight: 800; transform: translateY(.15rem); }
+:lang(ar) .faq h3::before { content: "؟"; }
 .faq p { color: var(--muted); }
 
 /* Footer */
-footer { background: var(--surface); border-top: 1px solid var(--line); padding-block: 2rem; font-size: .92rem; color: var(--muted); }
+footer { background: var(--foot-bg); color: var(--foot-ink); padding-block: 2.5rem; font-size: .95rem; }
 footer .wrap { display: grid; gap: .8rem; }
-.disclaimer { max-width: 52rem; }
+footer b { color: #fff; }
+.disclaimer { max-width: 52rem; opacity: .9; }
 
 @media (max-width: 760px) {
   .hero .wrap, .book { grid-template-columns: 1fr; }
   .row2 { grid-template-columns: 1fr; }
   .nav { display: none; }
-  .hero { padding-block: 2rem; }
-  section.block { padding-block: 2.5rem; }
+  .hero { padding-block: 2.25rem; }
+  section.block { padding-block: 2.75rem; }
+  .logo small { display: none; }
 }
-
-/* Language switch and Arabic typography */
-.head-actions { display: flex; align-items: center; gap: .9rem; }
-.lang { color: var(--ink); font-weight: 700; text-decoration: none; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; }
-.lang:hover { border-color: var(--brand); color: var(--brand); }
-:lang(ar) { --display: "Noto Naskh Arabic", "Geeza Pro", "Arial", serif; --body: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Arial, sans-serif; }
-:lang(ar) .eyebrow, :lang(ar) .group-title { letter-spacing: 0; }
-:lang(he) { --display: "Frank Ruhl Libre", "David Libre", "Times New Roman", serif; --body: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif; }
-
-/* Booking choice: Mushlam vs private */
-.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
-.choice { align-content: start; }
-.choice .role { color: var(--accent); font-weight: 700; font-size: .95rem; }
-.choice .btn { justify-self: start; }
-.hero h1 + .sub { font-family: var(--display); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); color: var(--brand); margin-block: -.4rem 1rem; text-wrap: balance; }
-.doc .pos { font-weight: 600; color: var(--brand); margin-top: -.3rem; }
 </style>
 </head>
 <body>
@@ -212,7 +290,7 @@ footer .wrap { display: grid; gap: .8rem; }
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow">طب الروماتيزم · الطب الباطني · جراحة العظام</p>
+      <p class="chips"><span class="chip">طب الروماتيزم</span><span class="chip">الطب الباطني</span><span class="chip">جراحة العظام</span></p>
       <h1>عيادة أطباء أخصائيين استشاريين مستقلين</h1>
       <p class="sub">خدمات في مجالات مختلفة، منها الروماتيزم وجراحة العظام، وقريبًا خدمات إضافية</p>
       <p class="lead">تقع PrimeMed في طمرة مول. نشخّص ونعالج آلام المفاصل وأمراض المفاصل الالتهابية وأمراض المناعة الذاتية، ونقدّم استشارة متخصصة في جراحة العظام.</p>
@@ -222,7 +300,7 @@ footer .wrap { display: grid; gap: .8rem; }
       </div>
     </div>
     <aside class="hours" aria-labelledby="hours-title">
-      <h2 id="hours-title">ساعات الاستقبال</h2>
+      <h2 id="hours-title"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ساعات الاستقبال</h2>
       <table>
         <tbody>
           <tr><td>يوم الثلاثاء</td><td>16:00–21:00</td></tr>
@@ -230,9 +308,13 @@ footer .wrap { display: grid; gap: .8rem; }
           <tr class="closed"><td>باقي الأيام</td><td>مغلق</td></tr>
         </tbody>
       </table>
-      <p class="addr">طمرة مول، الطابق الأول، الشارع الرئيسي، طمرة</p>
+      <p class="addr"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>طمرة مول، الطابق الأول، الشارع الرئيسي، طمرة</span></p>
     </aside>
   </div>
+</section>
+
+<section class="highlights" aria-label="مزايا العيادة">
+  <div class="wrap"><ul><li><span class="dot"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M12 15v2a4 4 0 0 0 8 0v-3"/><circle cx="20" cy="12" r="2"/></svg></span>طبيبان أخصائيان كبيران</li><li><span class="dot"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>موشلام كلاليت ومواعيد خاصة</li><li><span class="dot"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>خدمة بالعربية والعبرية</li></ul></div>
 </section>
 
 <section class="block" id="doctors">
@@ -243,6 +325,7 @@ footer .wrap { display: grid; gap: .8rem; }
     </div>
     <div class="docs">
       <article class="doc">
+        <div class="avatar" aria-hidden="true">ن ح</div>
         <p class="role">أخصائي في الطب الباطني وطب الروماتيزم</p>
         <h3>د. نزار حجازي</h3>
         <p class="pos">مدير قسم الباطني ب، المركز الطبي هعيمك</p>
@@ -254,7 +337,8 @@ footer .wrap { display: grid; gap: .8rem; }
           <li>متابعة وعلاج بالأدوية البيولوجية</li>
         </ul>
       </article>
-      <article class="doc">
+      <article class="doc ortho">
+        <div class="avatar" aria-hidden="true">ف خ</div>
         <p class="role">أخصائي جراحة العظام</p>
         <h3>د. فادي خازن</h3>
         <p class="pos">نائب مدير قسم العظام، المركز الطبي الكرمل</p>
@@ -299,7 +383,7 @@ footer .wrap { display: grid; gap: .8rem; }
       <p>معلومات عامة عن الأمراض الشائعة في العيادة. اضغطوا على اسم المرض للقراءة عنه.</p>
     </div>
     <div class="conds">
-      <h3 class="group-title">أمراض المفاصل الالتهابية</h3>
+      <h3 class="group-title g1">أمراض المفاصل الالتهابية</h3>
 
       <details class="cond">
         <summary><h3>التهاب المفاصل الروماتويدي</h3><span class="en">Rheumatoid arthritis</span></summary>
@@ -361,7 +445,7 @@ footer .wrap { display: grid; gap: .8rem; }
         </div>
       </details>
 
-      <h3 class="group-title">أمراض النسيج الضام والتهابات الأوعية الدموية</h3>
+      <h3 class="group-title g2">أمراض النسيج الضام والتهابات الأوعية الدموية</h3>
 
       <details class="cond">
         <summary><h3>الذئبة الحمراء (لوبوس)</h3><span class="en">Systemic lupus erythematosus</span></summary>
@@ -399,7 +483,7 @@ footer .wrap { display: grid; gap: .8rem; }
         </div>
       </details>
 
-      <h3 class="group-title">المفاصل والعضلات</h3>
+      <h3 class="group-title g3">المفاصل والعضلات</h3>
 
       <details class="cond">
         <summary><h3>الفصال العظمي (خشونة المفاصل)</h3><span class="en">Osteoarthritis</span></summary>
@@ -436,7 +520,7 @@ footer .wrap { display: grid; gap: .8rem; }
     </div>
     <div class="cols">
       <div>
-        <h3>فحوصات شائعة</h3>
+        <h3><span class="dot"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8M10 3v13a2 2 0 0 0 4 0V3"/><path d="M10 11h4"/></svg></span>فحوصات شائعة</h3>
         <ul>
           <li><b>مؤشرات الالتهاب:</b> سرعة الترسب (ESR) وCRP</li>
           <li><b>الأجسام المضادة:</b> RF وAnti-CCP وANA وغيرها بحسب الاشتباه</li>
@@ -447,7 +531,7 @@ footer .wrap { display: grid; gap: .8rem; }
         </ul>
       </div>
       <div>
-        <h3>خيارات العلاج</h3>
+        <h3><span class="dot"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7z"/><path d="M7 7l7 7"/></svg></span>خيارات العلاج</h3>
         <ul>
           <li><b>مضادات الالتهاب</b> (NSAIDs) لتخفيف الألم والتيبّس</li>
           <li><b>الستيرويدات</b> لفترة قصيرة أو بالحقن في المفصل</li>
@@ -480,26 +564,34 @@ footer .wrap { display: grid; gap: .8rem; }
     </div>
 <div class="choices">
       <div class="panel choice">
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
         <p class="role">لمؤمَّني كلاليت موشلام</p>
         <h3>موعد ضمن الموشلام</h3>
-        <p>اختاروا موعدًا متاحًا في جدول المواعيد الإلكتروني، ويُحجز الموعد فورًا.</p>
-        <a class="btn" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener">اختيار موعد في الجدول</a>
+        <p>اتركوا تفاصيلكم، وستتواصل معكم السكرتارية لتنسيق الموعد.</p>
+        <a class="btn" href="#req" data-type="mushlam">طلب موعد ضمن الموشلام</a>
       </div>
-      <div class="panel choice">
+      <div class="panel choice private">
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
         <p class="role">لمؤمَّني جميع صناديق المرضى</p>
         <h3>موعد خاص</h3>
         <p>اتركوا تفاصيلكم، وستتواصل معكم السكرتارية لتنسيق الموعد.</p>
-        <a class="btn ghost" href="#req">طلب موعد خاص</a>
+        <a class="btn ghost" href="#req" data-type="private">طلب موعد خاص</a>
       </div>
     </div>
     <div class="book">
       <div class="panel">
-        <h3>طلب موعد خاص</h3>
+        <h3>طلب موعد</h3>
         <form class="req" id="req" novalidate>
           <div class="row2">
             <label for="f-name">الاسم الكامل<input id="f-name" name="name" required autocomplete="name"></label>
             <label for="f-phone">رقم الهاتف<input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" dir="ltr"></label>
           </div>
+          <label for="f-type">نوع الموعد
+            <select id="f-type" name="type">
+              <option value="mushlam">موعد ضمن الموشلام (لمؤمَّني كلاليت موشلام)</option>
+              <option value="private">موعد خاص</option>
+            </select>
+          </label>
           <label for="f-doc">الطبيب
               <select id="f-doc" name="doctor">
                 <option>الروماتيزم والطب الباطني</option>
@@ -524,7 +616,6 @@ footer .wrap { display: grid; gap: .8rem; }
       <div class="panel" id="contact">
         <h3>التواصل والوصول</h3>
         <div class="contact-list">
-          <div><span>موعد ضمن الموشلام</span><a class="btn ghost" href="https://calendar.app.google/ps3URCL7vd5wNhkF9" target="_blank" rel="noopener" id="online-booking">إلى جدول المواعيد</a></div>
           <div><span>هاتف السكرتارية</span><a class="ltr" href="tel:+97246402020"><b>04-640-2020</b></a></div>
           <div><span>واتساب</span><a class="ltr" href="https://wa.me/972503593893" target="_blank" rel="noopener"><b>050-359-3893</b></a></div>
           <div><span>العنوان</span><b>طمرة مول، الطابق الأول، الشارع الرئيسي، طمرة</b></div>
@@ -560,8 +651,8 @@ function initBooking(root) {
   // Clinic WhatsApp number in international format, digits only 
   var CLINIC_WA = "972503593893";
   var T = {
-    he: { hi: "שלום, אבקש לקבוע תור פרטי במרפאת PrimeMed. אשמח שתחזרו אליי.", name: "שם", phone: "טלפון", doc: "תחום", day: "יום מועדף", reason: "סיבת הפנייה", copied: "הועתק", select: "סמנו והעתיקו" },
-    ar: { hi: "مرحبًا، أود حجز موعد خاص في عيادة PrimeMed. أرجو التواصل معي.", name: "الاسم", phone: "الهاتف", doc: "المجال", day: "اليوم المفضّل", reason: "سبب التوجه", copied: "تم النسخ", select: "حدّدوا النص وانسخوه" }
+    he: { hi: "שלום, אבקש לקבוע תור במרפאת PrimeMed. אשמח שתחזרו אליי.", type: "סוג התור", name: "שם", phone: "טלפון", doc: "תחום", day: "יום מועדף", reason: "סיבת הפנייה", copied: "הועתק", select: "סמנו והעתיקו" },
+    ar: { hi: "مرحبًا، أود حجز موعد في عيادة PrimeMed. أرجو التواصل معي.", type: "نوع الموعد", name: "الاسم", phone: "الهاتف", doc: "المجال", day: "اليوم المفضّل", reason: "سبب التوجه", copied: "تم النسخ", select: "حدّدوا النص وانسخوه" }
   };
   var form = root.querySelector("#req");
   if (!form) return;
@@ -576,7 +667,8 @@ function initBooking(root) {
     var name = v("f-name"), phone = v("f-phone");
     if (!name || !phone) { err.hidden = false; return; }
     err.hidden = true;
-    var lines = [t.hi, t.name + ": " + name, t.phone + ": " + phone, t.doc + ": " + v("f-doc")];
+    var typeSel = root.querySelector("#f-type");
+    var lines = [t.hi, t.type + ": " + typeSel.options[typeSel.selectedIndex].text, t.name + ": " + name, t.phone + ": " + phone, t.doc + ": " + v("f-doc")];
     var reason = v("f-reason");
     if (reason) lines.push(t.reason + ": " + reason);
     var msg = lines.join("\n");
@@ -584,6 +676,10 @@ function initBooking(root) {
     root.querySelector("#req-wa").href = "https://wa.me/" + CLINIC_WA + "?text=" + encodeURIComponent(msg);
     out.hidden = false;
     out.scrollIntoView({ block: "nearest" });
+  });
+  // Choice cards preselect the appointment type in the form
+  root.querySelectorAll("a[data-type]").forEach(function (a) {
+    a.addEventListener("click", function () { root.querySelector("#f-type").value = a.dataset.type; });
   });
   root.querySelector("#req-copy").addEventListener("click", function () {
     var btn = this;
